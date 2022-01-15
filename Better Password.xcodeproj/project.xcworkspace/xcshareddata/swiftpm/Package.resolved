@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AlertToast",
+        "repositoryURL": "https://github.com/elai950/AlertToast.git",
+        "state": {
+          "branch": "master",
+          "revision": "551a7590ca9976c079123c330b7332cbfbfce47b",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

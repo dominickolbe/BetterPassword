@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Better Password
+
+  Created by Dominic Kolbe on 14/01/2022.
+  
+*/
+
+"GENERATED_PASSWORD" = "Generiertes Passwort";
+
+"LENGTH" = "Länge";
+
+"OPTIONS" = "Optionen";
+"MINIMUM_NUMBERS" = "Zahlen";
+"SPECIAL_CHARACTERS" = "Sonderzeichen";
+"EXCLUDE_AMBIGUOUS_CHARACTERS" = "Keine speziellen Zeichen";
+
+"BUTTON_GENERATE" = "Generieren";
+
+"RESET" = "Zurücksetzen";

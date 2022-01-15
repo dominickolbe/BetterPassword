@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F6BD1CF2790D6E0005E0781 /* Better_PasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1CE2790D6E0005E0781 /* Better_PasswordApp.swift */; };
+		8F08514E2792318000E1316C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F0851502792318000E1316C /* Localizable.strings */; };
+		8F178F582791018C00AF8821 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 8F178F572791018C00AF8821 /* AlertToast */; };
+		8F178F5D279107CD00AF8821 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F178F5C279107CD00AF8821 /* Constants.swift */; };
+		8F1ABAE727910B2D00221ED6 /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1ABAE627910B2D00221ED6 /* Magic.swift */; };
+		8F1ABAE927910B5E00221ED6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1ABAE827910B5E00221ED6 /* Utils.swift */; };
+		8F6BD1CF2790D6E0005E0781 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1CE2790D6E0005E0781 /* App.swift */; };
 		8F6BD1D12790D6E0005E0781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D02790D6E0005E0781 /* ContentView.swift */; };
 		8F6BD1D32790D6E1005E0781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D22790D6E1005E0781 /* Assets.xcassets */; };
 		8F6BD1D62790D6E1005E0781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D52790D6E1005E0781 /* Preview Assets.xcassets */; };
+		8FC0767B2791133100470D0B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0767A2791133100470D0B /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F08514B27922CF700E1316C /* Better-Password-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Better-Password-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8F08514F2792318000E1316C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F0851522792364300E1316C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F178F542790F33800AF8821 /* Better Password.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Better Password.entitlements"; sourceTree = "<group>"; };
+		8F178F5C279107CD00AF8821 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8F1ABAE627910B2D00221ED6 /* Magic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
+		8F1ABAE827910B5E00221ED6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8F6BD1CB2790D6E0005E0781 /* Better Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Better Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F6BD1CE2790D6E0005E0781 /* Better_PasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Better_PasswordApp.swift; sourceTree = "<group>"; };
+		8F6BD1CE2790D6E0005E0781 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		8F6BD1D02790D6E0005E0781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F6BD1D22790D6E1005E0781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F6BD1D52790D6E1005E0781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FC0767A2791133100470D0B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +40,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F178F582791018C00AF8821 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F178F592791079D00AF8821 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8F178F5C279107CD00AF8821 /* Constants.swift */,
+				8F1ABAE627910B2D00221ED6 /* Magic.swift */,
+				8F1ABAE827910B5E00221ED6 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8F178F5E2791083800AF8821 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F6BD1D02790D6E0005E0781 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8F6BD1C22790D6E0005E0781 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +84,15 @@
 		8F6BD1CD2790D6E0005E0781 /* Better Password */ = {
 			isa = PBXGroup;
 			children = (
-				8F6BD1CE2790D6E0005E0781 /* Better_PasswordApp.swift */,
-				8F6BD1D02790D6E0005E0781 /* ContentView.swift */,
+				8F6BD1CE2790D6E0005E0781 /* App.swift */,
+				8FC076792791132300470D0B /* Model */,
+				8F178F592791079D00AF8821 /* Utils */,
+				8F178F5E2791083800AF8821 /* Views */,
+				8F178F542790F33800AF8821 /* Better Password.entitlements */,
+				8F08514B27922CF700E1316C /* Better-Password-Info.plist */,
 				8F6BD1D22790D6E1005E0781 /* Assets.xcassets */,
 				8F6BD1D42790D6E1005E0781 /* Preview Content */,
+				8F0851502792318000E1316C /* Localizable.strings */,
 			);
 			path = "Better Password";
 			sourceTree = "<group>";
@@ -65,6 +103,14 @@
 				8F6BD1D52790D6E1005E0781 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8FC076792791132300470D0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0767A2791133100470D0B /* ViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,9 @@
 			dependencies = (
 			);
 			name = "Better Password";
+			packageProductDependencies = (
+				8F178F572791018C00AF8821 /* AlertToast */,
+			);
 			productName = "Better Password";
 			productReference = 8F6BD1CB2790D6E0005E0781 /* Better Password.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +158,12 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 8F6BD1C22790D6E0005E0781;
+			packageReferences = (
+				8F178F562791018C00AF8821 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 8F6BD1CC2790D6E0005E0781 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F6BD1D62790D6E1005E0781 /* Preview Assets.xcassets in Resources */,
+				8F08514E2792318000E1316C /* Localizable.strings in Resources */,
 				8F6BD1D32790D6E1005E0781 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,18 +191,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1ABAE927910B5E00221ED6 /* Utils.swift in Sources */,
 				8F6BD1D12790D6E0005E0781 /* ContentView.swift in Sources */,
-				8F6BD1CF2790D6E0005E0781 /* Better_PasswordApp.swift in Sources */,
+				8F6BD1CF2790D6E0005E0781 /* App.swift in Sources */,
+				8F178F5D279107CD00AF8821 /* Constants.swift in Sources */,
+				8F1ABAE727910B2D00221ED6 /* Magic.swift in Sources */,
+				8FC0767B2791133100470D0B /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F0851502792318000E1316C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F08514F2792318000E1316C /* en */,
+				8F0851522792364300E1316C /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8F6BD1D72790D6E1005E0781 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -196,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -210,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -251,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -266,24 +338,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Better Password/Better Password.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Better Password/Preview Content\"";
 				DEVELOPMENT_TEAM = Q6ERXZ3Z5B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Better-Password-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.domnc.betterpassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,24 +378,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Better Password/Better Password.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Better Password/Preview Content\"";
 				DEVELOPMENT_TEAM = Q6ERXZ3Z5B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Better-Password-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = app.domnc.betterpassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,6 +435,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F178F562791018C00AF8821 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F178F572791018C00AF8821 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F178F562791018C00AF8821 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F6BD1C32790D6E0005E0781 /* Project object */;
 }

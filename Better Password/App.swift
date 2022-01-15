@@ -8,10 +8,17 @@
 import SwiftUI
 
 @main
-struct Better_PasswordApp: App {
+struct MainApp: App {
+  
+  @StateObject var viewModel: ViewModel = ViewModel()
+  
   var body: some Scene {
+    
     WindowGroup {
       ContentView()
+        .environmentObject(viewModel)
     }
+    
   }
 }
+
