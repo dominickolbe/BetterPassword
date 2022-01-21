@@ -8,17 +8,17 @@
 import SwiftUI
 
 @main
-struct MainApp: App {
+struct BetterPasswordApp: App {
   
-  @StateObject var viewModel: ViewModel = ViewModel()
+  @StateObject var viewModel: GeneratorViewModel = GeneratorViewModel()
   
   var body: some Scene {
-    
     WindowGroup {
-      ContentView()
+      GeneratorView()
         .environmentObject(viewModel)
+//      TODO: iPad and macOS
+//        .frame(minWidth: 200, maxWidth: 500)
     }
-    
   }
 }
 

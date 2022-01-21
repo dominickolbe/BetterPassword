@@ -6,6 +6,8 @@
   
 */
 
+"ALERT_PASSWORD_COPY" = "Passwort kopiert.";
+
 "GENERATED_PASSWORD" = "Generiertes Passwort";
 
 "LENGTH" = "Länge";
@@ -18,3 +20,13 @@
 "BUTTON_GENERATE" = "Generieren";
 
 "RESET" = "Zurücksetzen";
+
+"DONE" = "Fertig";
+
+"SETTINGS" = "Einstellungen";
+
+"ABOUT" = "Info";
+
+"WRITE_REVIEW" = "Bewertung abgeben";
+
+"APP_VERSION" = "Version";

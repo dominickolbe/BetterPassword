@@ -9,13 +9,20 @@ import Foundation
 
 struct Constants {
   
-  struct DEFAULTS {
+  struct STORAGE_KEY {
+    static let OPTIONS = "OPTION_KEY"
+    static let PASSWORD = "PASSWORD_KEY"
+  }
+  
+  struct DEFAULT_OPTIONS {
     static let TOTAL_LENGTH = 16
     static let NUMBERS_LENGTH = 4
     static let SYMBOLS_LENGTH = 4
     
     static let TOTAL_MIN_LENGTH = 4
     static let TOTAL_MAX_LENGTH = 64
+    
+    static let EXCLUDE_AMBIGUOUS_CHARACTERS = true
   }
   
   struct Crypto {
@@ -27,7 +34,7 @@ struct Constants {
     
     static func generate(of length: Double, in chars: String) -> String {
       return String((0..<Int(length)).compactMap{ _ in chars.randomElement() })
-    }
+    }    
   }
-  
+
 }

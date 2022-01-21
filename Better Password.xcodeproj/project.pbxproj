@@ -10,29 +10,30 @@
 		8F08514E2792318000E1316C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F0851502792318000E1316C /* Localizable.strings */; };
 		8F178F582791018C00AF8821 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 8F178F572791018C00AF8821 /* AlertToast */; };
 		8F178F5D279107CD00AF8821 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F178F5C279107CD00AF8821 /* Constants.swift */; };
-		8F1ABAE727910B2D00221ED6 /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1ABAE627910B2D00221ED6 /* Magic.swift */; };
 		8F1ABAE927910B5E00221ED6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1ABAE827910B5E00221ED6 /* Utils.swift */; };
-		8F6BD1CF2790D6E0005E0781 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1CE2790D6E0005E0781 /* App.swift */; };
-		8F6BD1D12790D6E0005E0781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D02790D6E0005E0781 /* ContentView.swift */; };
+		8F28379827925ECD000A942B /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F28379727925ECD000A942B /* Options.swift */; };
+		8F6BD1CF2790D6E0005E0781 /* BetterPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1CE2790D6E0005E0781 /* BetterPasswordApp.swift */; };
+		8F6BD1D12790D6E0005E0781 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D02790D6E0005E0781 /* GeneratorView.swift */; };
 		8F6BD1D32790D6E1005E0781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D22790D6E1005E0781 /* Assets.xcassets */; };
 		8F6BD1D62790D6E1005E0781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D52790D6E1005E0781 /* Preview Assets.xcassets */; };
-		8FC0767B2791133100470D0B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0767A2791133100470D0B /* ViewModel.swift */; };
+		8F93C131279271CA005436E5 /* GeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F93C130279271CA005436E5 /* GeneratorViewModel.swift */; };
+		8FD4568D279A2EF30090FE81 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4568C279A2EF30090FE81 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F08514B27922CF700E1316C /* Better-Password-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Better-Password-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8F08514F2792318000E1316C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8F0851522792364300E1316C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8F178F542790F33800AF8821 /* Better Password.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Better Password.entitlements"; sourceTree = "<group>"; };
 		8F178F5C279107CD00AF8821 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		8F1ABAE627910B2D00221ED6 /* Magic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
 		8F1ABAE827910B5E00221ED6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8F28379727925ECD000A942B /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		8F6BD1CB2790D6E0005E0781 /* Better Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Better Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F6BD1CE2790D6E0005E0781 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		8F6BD1D02790D6E0005E0781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F6BD1CE2790D6E0005E0781 /* BetterPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterPasswordApp.swift; sourceTree = "<group>"; };
+		8F6BD1D02790D6E0005E0781 /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
 		8F6BD1D22790D6E1005E0781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F6BD1D52790D6E1005E0781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8FC0767A2791133100470D0B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8F93C130279271CA005436E5 /* GeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorViewModel.swift; sourceTree = "<group>"; };
+		8FD4568C279A2EF30090FE81 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,19 +51,35 @@
 		8F178F592791079D00AF8821 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				8F178F5C279107CD00AF8821 /* Constants.swift */,
-				8F1ABAE627910B2D00221ED6 /* Magic.swift */,
 				8F1ABAE827910B5E00221ED6 /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		8F178F5E2791083800AF8821 /* Views */ = {
+		8F4BF59E279AB036005AA577 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8F6BD1D02790D6E0005E0781 /* ContentView.swift */,
+				8F4BF5A0279AB077005AA577 /* Content */,
+				8F4BF59F279AB03C005AA577 /* Settings */,
 			);
-			path = Views;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8F4BF59F279AB03C005AA577 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8FD4568C279A2EF30090FE81 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8F4BF5A0279AB077005AA577 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F93C130279271CA005436E5 /* GeneratorViewModel.swift */,
+				8F6BD1D02790D6E0005E0781 /* GeneratorView.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 		8F6BD1C22790D6E0005E0781 = {
@@ -84,15 +101,15 @@
 		8F6BD1CD2790D6E0005E0781 /* Better Password */ = {
 			isa = PBXGroup;
 			children = (
-				8F6BD1CE2790D6E0005E0781 /* App.swift */,
-				8FC076792791132300470D0B /* Model */,
+				8FC076792791132300470D0B /* Models */,
+				8F4BF59E279AB036005AA577 /* Modules */,
 				8F178F592791079D00AF8821 /* Utils */,
-				8F178F5E2791083800AF8821 /* Views */,
-				8F178F542790F33800AF8821 /* Better Password.entitlements */,
+				8F178F5C279107CD00AF8821 /* Constants.swift */,
+				8F6BD1CE2790D6E0005E0781 /* BetterPasswordApp.swift */,
 				8F08514B27922CF700E1316C /* Better-Password-Info.plist */,
 				8F6BD1D22790D6E1005E0781 /* Assets.xcassets */,
-				8F6BD1D42790D6E1005E0781 /* Preview Content */,
 				8F0851502792318000E1316C /* Localizable.strings */,
+				8F6BD1D42790D6E1005E0781 /* Preview Content */,
 			);
 			path = "Better Password";
 			sourceTree = "<group>";
@@ -105,12 +122,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8FC076792791132300470D0B /* Model */ = {
+		8FC076792791132300470D0B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8FC0767A2791133100470D0B /* ViewModel.swift */,
+				8F28379727925ECD000A942B /* Options.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,12 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD4568D279A2EF30090FE81 /* SettingsView.swift in Sources */,
 				8F1ABAE927910B5E00221ED6 /* Utils.swift in Sources */,
-				8F6BD1D12790D6E0005E0781 /* ContentView.swift in Sources */,
-				8F6BD1CF2790D6E0005E0781 /* App.swift in Sources */,
+				8F6BD1D12790D6E0005E0781 /* GeneratorView.swift in Sources */,
+				8F6BD1CF2790D6E0005E0781 /* BetterPasswordApp.swift in Sources */,
 				8F178F5D279107CD00AF8821 /* Constants.swift in Sources */,
-				8F1ABAE727910B2D00221ED6 /* Magic.swift in Sources */,
-				8FC0767B2791133100470D0B /* ViewModel.swift in Sources */,
+				8F28379827925ECD000A942B /* Options.swift in Sources */,
+				8F93C131279271CA005436E5 /* GeneratorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +356,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Better Password/Better Password.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -360,7 +377,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = app.domnc.betterpassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -369,7 +386,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -378,7 +395,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Better Password/Better Password.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -400,7 +416,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = app.domnc.betterpassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -409,7 +425,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
@@ -441,8 +457,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/elai950/AlertToast.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = revision;
+				revision = 551a7590ca9976c079123c330b7332cbfbfce47b;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
