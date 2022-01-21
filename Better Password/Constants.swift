@@ -34,7 +34,13 @@ struct Constants {
     
     static func generate(of length: Double, in chars: String) -> String {
       return String((0..<Int(length)).compactMap{ _ in chars.randomElement() })
-    }    
+    }
   }
-
+  
+  //  DIMENSIONS
+  
+  struct DIMENSIONS {
+    static let MAX_WIDTH_IPAD: Double = 768.0
+  }
+  
 }

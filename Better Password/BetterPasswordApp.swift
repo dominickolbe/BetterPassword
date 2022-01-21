@@ -16,8 +16,6 @@ struct BetterPasswordApp: App {
     WindowGroup {
       GeneratorView()
         .environmentObject(viewModel)
-//      TODO: iPad and macOS
-//        .frame(minWidth: 200, maxWidth: 500)
     }
   }
 }
