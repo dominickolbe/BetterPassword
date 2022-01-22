@@ -27,8 +27,15 @@
 
 "ABOUT" = "Info";
 
+"GENERAL" = "Allgemein";
+
 "WRITE_REVIEW" = "Bewertung abgeben";
 "CONTACT" = "Kontakt";
 "PRIVACY" = "Datenschutzerklärung";
 
 "APP_VERSION" = "Version";
+
+"APPARENCE" = "Apparence";
+"APPARENCE_AUTO" = "Auto";
+"APPARENCE_LIGHT" = "Hell";
+"APPARENCE_DARK" = "Dunkel";

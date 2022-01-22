@@ -13,8 +13,8 @@ let coloredNavAppearance = UINavigationBarAppearance()
 
 struct GeneratorView: View {
   
+  @ObservedObject var appSettings = AppSettings.shared
   @EnvironmentObject var viewModel: GeneratorViewModel
-  
   @State private var showingSheet = false
   
   init() {
@@ -106,7 +106,6 @@ struct GeneratorView: View {
               }
             }
             
-            
             Toggle("EXCLUDE_AMBIGUOUS_CHARACTERS", isOn: $viewModel.options.excludeAmbiguousCharacters)
             
           }
@@ -155,6 +154,7 @@ struct GeneratorView: View {
       .navigationBarTitleDisplayMode(.inline)
       .sheet(isPresented: $showingSheet) {
         SettingsView()
+          .preferredColorScheme(appSettings.currentTheme.colorScheme)
       }
       .toolbar {
         ToolbarItemGroup(placement: .principal) {

@@ -12,6 +12,7 @@ struct Constants {
   struct STORAGE_KEY {
     static let OPTIONS = "OPTION_KEY"
     static let PASSWORD = "PASSWORD_KEY"
+    static let APP_SETTINGS_COLOR_THEME = "APP_SETTINGS_COLOR_THEME"
   }
   
   struct DEFAULT_OPTIONS {

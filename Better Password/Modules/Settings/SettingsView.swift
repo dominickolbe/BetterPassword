@@ -11,6 +11,7 @@ import StoreKit
 struct SettingsView: View {
   
   @Environment(\.presentationMode) private var presentationMode
+  @ObservedObject var appSettings = AppSettings.shared
   
   let dictionary = Bundle.main.infoDictionary!
   
@@ -28,7 +29,16 @@ struct SettingsView: View {
   var body: some View {
     NavigationView {
       List {
-  
+        
+        Section(
+          header: Text("APPARENCE")
+        ) {
+          Picker("APPARENCE", selection: appSettings.$currentTheme) {
+            Text("APPARENCE_LIGHT").tag(Theme.light)
+            Text("APPARENCE_DARK").tag(Theme.dark)
+          }.pickerStyle(.segmented)
+        }
+        
         Section(
           header: Text("ABOUT")
         ) {
@@ -36,7 +46,7 @@ struct SettingsView: View {
             if let windowScene = UIApplication.shared.windows.first?.windowScene { SKStoreReviewController.requestReview(in: windowScene)
             }
           }) {
-            HStack(alignment: .firstTextBaseline) {
+            HStack {
               Text("WRITE_REVIEW")
                 .foregroundColor(Color(UIColor.label))
               Spacer()
@@ -65,7 +75,7 @@ struct SettingsView: View {
               .foregroundColor(Color(UIColor.label))
           }
         }
-
+        
         Section(
           footer: Text(formatFooter())
             .padding(.top)

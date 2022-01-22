@@ -27,8 +27,15 @@
 
 "ABOUT" = "About";
 
+"GENERAL" = "General";
+
 "WRITE_REVIEW" = "Leave a Review";
 "CONTACT" = "Contact";
 "PRIVACY" = "Privacy";
 
 "APP_VERSION" = "Version";
+
+"APPARENCE" = "Apparence";
+"APPARENCE_AUTO" = "Auto";
+"APPARENCE_LIGHT" = "Light";
+"APPARENCE_DARK" = "Dark";

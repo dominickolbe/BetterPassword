@@ -12,6 +12,7 @@
 		8F178F5D279107CD00AF8821 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F178F5C279107CD00AF8821 /* Constants.swift */; };
 		8F1ABAE927910B5E00221ED6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1ABAE827910B5E00221ED6 /* Utils.swift */; };
 		8F28379827925ECD000A942B /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F28379727925ECD000A942B /* Options.swift */; };
+		8F4E5D5E279CBD710021AFBE /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E5D5D279CBD710021AFBE /* AppSettings.swift */; };
 		8F6BD1CF2790D6E0005E0781 /* BetterPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1CE2790D6E0005E0781 /* BetterPasswordApp.swift */; };
 		8F6BD1D12790D6E0005E0781 /* GeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D02790D6E0005E0781 /* GeneratorView.swift */; };
 		8F6BD1D32790D6E1005E0781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BD1D22790D6E1005E0781 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		8F178F5C279107CD00AF8821 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F1ABAE827910B5E00221ED6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8F28379727925ECD000A942B /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		8F4E5D5D279CBD710021AFBE /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		8F6BD1CB2790D6E0005E0781 /* Better Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Better Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6BD1CE2790D6E0005E0781 /* BetterPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterPasswordApp.swift; sourceTree = "<group>"; };
 		8F6BD1D02790D6E0005E0781 /* GeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				8F1ABAE827910B5E00221ED6 /* Utils.swift */,
+				8F4E5D5D279CBD710021AFBE /* AppSettings.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				8F6BD1D12790D6E0005E0781 /* GeneratorView.swift in Sources */,
 				8F6BD1CF2790D6E0005E0781 /* BetterPasswordApp.swift in Sources */,
 				8F178F5D279107CD00AF8821 /* Constants.swift in Sources */,
+				8F4E5D5E279CBD710021AFBE /* AppSettings.swift in Sources */,
 				8F28379827925ECD000A942B /* Options.swift in Sources */,
 				8F93C131279271CA005436E5 /* GeneratorViewModel.swift in Sources */,
 			);
@@ -359,7 +363,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1642895010;
 				DEVELOPMENT_ASSET_PATHS = "\"Better Password/Preview Content\"";
 				DEVELOPMENT_TEAM = Q6ERXZ3Z5B;
 				ENABLE_PREVIEWS = YES;
@@ -377,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = app.domnc.betterpassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -399,7 +403,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1642895010;
 				DEVELOPMENT_ASSET_PATHS = "\"Better Password/Preview Content\"";
 				DEVELOPMENT_TEAM = Q6ERXZ3Z5B;
 				ENABLE_PREVIEWS = YES;
@@ -417,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = app.domnc.betterpassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
