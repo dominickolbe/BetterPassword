@@ -43,4 +43,7 @@ struct Constants {
     static let MAX_WIDTH_IPAD: Double = 768.0
   }
   
+  static let CONTACT_ADDRESS = "dev@domnc.app"
+  static let PRIVACY_URL = "https://privacy.domnc.app"
+  
 }

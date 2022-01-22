@@ -8,39 +8,77 @@
 import SwiftUI
 import StoreKit
 
-
 struct SettingsView: View {
   
   @Environment(\.presentationMode) private var presentationMode
   
-  func version() -> String {
-    let dictionary = Bundle.main.infoDictionary!
+  let dictionary = Bundle.main.infoDictionary!
+  
+  func formatVersion() -> String {
     let version = dictionary["CFBundleShortVersionString"] as! String
     let build = dictionary["CFBundleVersion"] as! String
-    return "\(version) (\(build))"
+    return "v\(version) (\(build))"
+  }
+  
+  func formatFooter() -> String {
+    let name = dictionary["CFBundleName"] as! String
+    return "\(name). stay safe. @ domnc."
   }
   
   var body: some View {
     NavigationView {
       List {
+  
         Section(
-          header: Text("ABOUT"),
-          footer:  Button(action: {
-            if let windowScene = UIApplication.shared.windows.first?.windowScene { SKStoreReviewController.requestReview(in: windowScene) }
+          header: Text("ABOUT")
+        ) {
+          Button(action: {
+            if let windowScene = UIApplication.shared.windows.first?.windowScene { SKStoreReviewController.requestReview(in: windowScene)
+            }
           }) {
-            Label("WRITE_REVIEW", systemImage: "square.and.pencil")
-              .accentColor(.accentColor)
+            HStack(alignment: .firstTextBaseline) {
+              Text("WRITE_REVIEW")
+                .foregroundColor(Color(UIColor.label))
+              Spacer()
+              Image(systemName: "star.bubble")
+                .foregroundColor(Color(UIColor.label))
+            }
           }
+          HStack {
+            Link(
+              "CONTACT",
+              destination: URL(string: "mailto:\(Constants.CONTACT_ADDRESS)")!
+            )
+              .foregroundColor(Color(UIColor.label))
+            Spacer()
+            Image(systemName: "envelope")
+              .foregroundColor(Color(UIColor.label))
+          }
+          HStack {
+            Link(
+              "PRIVACY",
+              destination: URL(string: Constants.PRIVACY_URL)!
+            )
+              .foregroundColor(Color(UIColor.label))
+            Spacer()
+            Image(systemName: "eye")
+              .foregroundColor(Color(UIColor.label))
+          }
+        }
+
+        Section(
+          footer: Text(formatFooter())
             .padding(.top)
         ) {
           HStack {
             Text("APP_VERSION")
             Spacer()
-            Text(version())
+            Text(formatVersion())
+              .font(.system(size: 14, design: .monospaced))
               .foregroundColor(.gray)
-              .font(.callout)
           }
         }
+        
       }
       .navigationTitle(Text("SETTINGS"))
       .navigationBarTitleDisplayMode(.inline)
@@ -56,6 +94,7 @@ struct SettingsView: View {
     .navigationViewStyle(StackNavigationViewStyle())
   }
 }
+
 
 struct SettingsView_Previews: PreviewProvider {
   static var previews: some View {

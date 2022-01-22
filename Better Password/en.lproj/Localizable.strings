@@ -27,6 +27,8 @@
 
 "ABOUT" = "About";
 
-"WRITE_REVIEW" = "Write a review";
+"WRITE_REVIEW" = "Leave a Review";
+"CONTACT" = "Contact";
+"PRIVACY" = "Privacy";
 
 "APP_VERSION" = "Version";
