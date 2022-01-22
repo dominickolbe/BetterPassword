@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/dominickolbe/BetterPassword/compare/v1.5.0...v1.6.0) (2022-01-22)
+
+
+### Features
+
+* add theme switcher ([9993575](https://github.com/dominickolbe/BetterPassword/commit/9993575d099cbfd888738660589a278184b5a8fa))
+
 ## [1.5.0](https://github.com/dominickolbe/BetterPassword/compare/v1.4.0...v1.5.0) (2022-01-22)
 
 
