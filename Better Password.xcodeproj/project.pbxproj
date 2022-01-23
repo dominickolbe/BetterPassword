@@ -363,7 +363,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1642895010;
+				CURRENT_PROJECT_VERSION = 1642972518;
 				DEVELOPMENT_ASSET_PATHS = "\"Better Password/Preview Content\"";
 				DEVELOPMENT_TEAM = Q6ERXZ3Z5B;
 				ENABLE_PREVIEWS = YES;
@@ -403,7 +403,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1642895010;
+				CURRENT_PROJECT_VERSION = 1642972518;
 				DEVELOPMENT_ASSET_PATHS = "\"Better Password/Preview Content\"";
 				DEVELOPMENT_TEAM = Q6ERXZ3Z5B;
 				ENABLE_PREVIEWS = YES;
