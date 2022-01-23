@@ -45,6 +45,6 @@ struct Constants {
   }
   
   static let CONTACT_ADDRESS = "dev@domnc.app"
-  static let PRIVACY_URL = "https://privacy.domnc.app"
+  static let PRIVACY_URL = "https://betterpassword.domnc.app"
   
 }

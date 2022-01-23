@@ -23,7 +23,7 @@ struct SettingsView: View {
   
   func formatFooter() -> String {
     let name = dictionary["CFBundleName"] as! String
-    return "\(name). stay safe. @ domnc."
+    return "\(name). stay safe. \n@ domnc."
   }
   
   var body: some View {
