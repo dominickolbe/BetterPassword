@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-itunes-app" content="{{ "app-id=" | append: site.app_store.app_id }}">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <div class="container-lg px-3 mt-3 mb-4 markdown-body">
+
+      {% if site.title and site.title != page.title %}
+      <div class="header border-bottom border-gray-light">
+        <h1 class="my-2">
+          <a href="{{ site.url }}">{{ site.title }}</a>
+        </h1>
+      </div>
+      {% endif %}
+
+      {{ content }}
+
+      <div class="footer border-top border-gray-light mt-4 pt-3 text-right text-gray">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms-conditions">Terms & Conditions</a>
+      </div>
+    </div>
+  </body>
+</html>

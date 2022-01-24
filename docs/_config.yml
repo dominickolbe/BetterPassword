@@ -1,0 +1,15 @@
+title: Better Password
+email: dev@domnc.app
+description: >-
+  Create your next password. Quickly and safe.
+url: "https://betterpassword.domnc.app"
+app_store:
+  link: "https://apple.co/3nS83ki"
+  app_id: "1605037431"
+
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+  - jekyll-remote-theme
+
+sass:
+  style: :compressed
