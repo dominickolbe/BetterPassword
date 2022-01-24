@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/dominickolbe/BetterPassword/compare/v1.7.0...v1.7.1) (2022-01-24)
+
+
+### Features
+
+* add github page ([005696a](https://github.com/dominickolbe/BetterPassword/commit/005696af77731eacd5e3f13c0f36d8e223f2fc9c))
+
 ## [1.7.0](https://github.com/dominickolbe/BetterPassword/compare/v1.6.1...v1.7.0) (2022-01-23)
 
 ### [1.6.1](https://github.com/dominickolbe/BetterPassword/compare/v1.6.0...v1.6.1) (2022-01-23)
