@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/dominickolbe/BetterPassword/compare/v1.7.2...v1.8.0) (2022-02-05)
+
+
+### Bug Fixes
+
+* typo ([f9c09c2](https://github.com/dominickolbe/BetterPassword/commit/f9c09c2262d2a22389994a86db1a9ed499a4cfb5))
+
 ### [1.7.2](https://github.com/dominickolbe/BetterPassword/compare/v1.7.1...v1.7.2) (2022-01-24)
 
 ### [1.7.1](https://github.com/dominickolbe/BetterPassword/compare/v1.7.0...v1.7.1) (2022-01-24)
