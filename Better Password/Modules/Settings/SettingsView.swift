@@ -31,12 +31,12 @@ struct SettingsView: View {
       List {
         
         Section(
-          header: Text("APPARENCE")
+          header: Text("OPTIONS")
         ) {
-          Picker("APPARENCE", selection: appSettings.$currentTheme) {
-            Text("APPARENCE_LIGHT").tag(Theme.light)
-            Text("APPARENCE_DARK").tag(Theme.dark)
-          }.pickerStyle(.segmented)
+          Picker("APPEARANCE", selection: appSettings.$currentTheme) {
+            Text("APPEARANCE_LIGHT").tag(Theme.light)
+            Text("APPEARANCE_DARK").tag(Theme.dark)
+          }
         }
         
         Section(

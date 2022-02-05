@@ -35,7 +35,7 @@
 
 "APP_VERSION" = "Version";
 
+"OPTIONS" = "Optionen";
 "APPEARANCE" = "Appearance";
-"APPEARANCE_AUTO" = "Auto";
 "APPEARANCE_LIGHT" = "Hell";
 "APPEARANCE_DARK" = "Dunkel";
