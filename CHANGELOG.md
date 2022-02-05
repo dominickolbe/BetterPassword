@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/dominickolbe/BetterPassword/compare/v1.7.2...v1.9.0) (2022-02-05)
+
+
+### Bug Fixes
+
+* Localizable.strings ([c67cf15](https://github.com/dominickolbe/BetterPassword/commit/c67cf1579b5bb27d135aa3f28ec11c7656a8b3b6))
+* typo ([f9c09c2](https://github.com/dominickolbe/BetterPassword/commit/f9c09c2262d2a22389994a86db1a9ed499a4cfb5))
+
 ## [1.8.0](https://github.com/dominickolbe/BetterPassword/compare/v1.7.2...v1.8.0) (2022-02-05)
 
 
