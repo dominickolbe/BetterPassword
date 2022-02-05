@@ -35,7 +35,7 @@
 
 "APP_VERSION" = "Version";
 
-"APPARENCE" = "Apparence";
-"APPARENCE_AUTO" = "Auto";
-"APPARENCE_LIGHT" = "Light";
-"APPARENCE_DARK" = "Dark";
+"APPEARANCE" = "Appearance";
+"APPEARANCE_AUTO" = "Auto";
+"APPEARANCE_LIGHT" = "Light";
+"APPEARANCE_DARK" = "Dark";
