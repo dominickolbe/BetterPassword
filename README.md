@@ -18,4 +18,4 @@
 
 ## LICENSE
 
-Copyright © 2022 [Dominic Kolbe](https://dominickolbe.dk) :de:
+Copyright © 2023 [Dominic Kolbe](https://dominickolbe.dk) :de:
