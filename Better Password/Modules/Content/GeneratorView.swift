@@ -27,6 +27,10 @@ struct GeneratorView: View {
   
   var body: some View {
     
+    ZStack {
+      
+  
+    
     NavigationView {
       
       VStack {
@@ -186,6 +190,7 @@ struct GeneratorView: View {
         type: .regular,
         title: "ALERT_PASSWORD_COPY"
       )
+    }
     }
   }
 }
