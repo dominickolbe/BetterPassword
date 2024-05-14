@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct BetterPasswordApp: App {
-  
+
   @ObservedObject var appSettings = AppSettings.shared
   @StateObject var viewModel: GeneratorViewModel = GeneratorViewModel()
-  
+
   var body: some Scene {
     WindowGroup {
       GeneratorView()
@@ -21,4 +21,3 @@ struct BetterPasswordApp: App {
     }
   }
 }
-

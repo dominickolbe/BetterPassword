@@ -12,33 +12,31 @@ import AlertToast
 let coloredNavAppearance = UINavigationBarAppearance()
 
 struct GeneratorView: View {
-  
+
   @ObservedObject var appSettings = AppSettings.shared
   @EnvironmentObject var viewModel: GeneratorViewModel
   @State private var showingSheet = false
-  
+
   init() {
     coloredNavAppearance.configureWithOpaqueBackground()
     coloredNavAppearance.backgroundColor = UIColor.systemGroupedBackground
     UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
   }
-  
+
   // MARK: - UI
-  
+
   var body: some View {
-    
+
     ZStack {
-      
-  
-    
+
     NavigationView {
-      
+
       VStack {
-        
+
         List {
-          
+
           // MARK: - SECRET
-          
+
           Section(header: Text("GENERATED_PASSWORD")) {
             Button {
               Utils.Clipboard.set(value: viewModel.password)
@@ -59,11 +57,11 @@ struct GeneratorView: View {
                 .transition(.opacity)
                 .id("SecretText" + viewModel.password)
             }
-            
+
           }
-          
+
           // MARK: - SLIDER
-          
+
           Section(header: Text("LENGTH")) {
             HStack {
               Slider(
@@ -78,12 +76,11 @@ struct GeneratorView: View {
                 .frame(minWidth: 40, alignment: .trailing)
             }
           }
-          
+
           // MARK: - OPTIONS
-          
-          
+
           Section(header: Text("OPTIONS")) {
-            
+
             Stepper(
               value: $viewModel.options.numbersLength,
               in: 0...(viewModel.options.maxLength / 2),
@@ -96,7 +93,7 @@ struct GeneratorView: View {
                   .padding(.trailing, 8)
               }
             }
-            
+
             Stepper(
               value: $viewModel.options.symbolsLength,
               in: 0...(viewModel.options.maxLength / 2),
@@ -109,19 +106,19 @@ struct GeneratorView: View {
                   .padding(.trailing, 8)
               }
             }
-            
+
             Toggle("EXCLUDE_AMBIGUOUS_CHARACTERS", isOn: $viewModel.options.excludeAmbiguousCharacters)
-            
+
           }
-          
+
           // MARK: - BUTTON
-          
-          Section() {
+
+          Section {
             Button {
               withAnimation(.easeInOut(duration: 0.2)) {
                 viewModel.generate()
               }
-              
+
             } label: {
               Text("BUTTON_GENERATE")
                 .font(.system(size: 18, weight: .bold, design: .default))
@@ -130,12 +127,12 @@ struct GeneratorView: View {
                 .padding(.top, 8)
                 .padding(.bottom, 8)
             }
-            
+
           }
-          
+
           // MARK: - END
-          
-          Section() {
+
+          Section {
             Button {
               viewModel.reset()
             } label: {
@@ -145,15 +142,15 @@ struct GeneratorView: View {
                 .foregroundColor(.red)
             }
           }
-          
+
           // MARK: - END
-          
+
         }
         .frame(
           maxWidth: Constants.DIMENSIONS.MAX_WIDTH_IPAD,
           maxHeight: .infinity, alignment: .leading
         )
-        
+
       }
       .navigationBarTitleDisplayMode(.inline)
       .sheet(isPresented: $showingSheet) {
@@ -184,7 +181,7 @@ struct GeneratorView: View {
       .accentColor(Color(UIColor.label))
     }
     .navigationViewStyle(StackNavigationViewStyle())
-    .toast(isPresenting: $viewModel.showToast){
+    .toast(isPresenting: $viewModel.showToast) {
       AlertToast(
         displayMode: .hud,
         type: .regular,
@@ -195,12 +192,11 @@ struct GeneratorView: View {
   }
 }
 
-
 // MARK: - PREVIEW
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    Group{
+    Group {
       GeneratorView()
         .environmentObject(GeneratorViewModel())
         .preferredColorScheme(.dark)

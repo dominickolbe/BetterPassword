@@ -8,13 +8,13 @@
 import Foundation
 
 class GeneratorViewModel: ObservableObject {
-  
+
   @Published var password: String = parsePassword() {
     didSet {
       UserDefaults.standard.set(password, forKey: Constants.STORAGE_KEY.PASSWORD)
     }
   }
-  
+
   @Published var options: Options = parseOptions() {
     didSet {
       if let encodedData = try? JSONEncoder().encode(options) {
@@ -22,54 +22,58 @@ class GeneratorViewModel: ObservableObject {
       }
     }
   }
-  
+
   @Published var showToast = false
-  
-  init () {
-    if (password.isEmpty) {
+
+  init() {
+    if password.isEmpty {
       generate()
     }
   }
-  
+
   func generate() {
-    
-    var value = "";
-    
-    if ((options.numbersLength + options.symbolsLength) < options.totalLength) {
-      value = Constants.Crypto.generate(of: options.totalLength - options.numbersLength - options.symbolsLength, in: Constants.Crypto.lowercaseCharacters+Constants.Crypto.uppercaseCharacters)
+
+    var value = ""
+
+    if (options.numbersLength + options.symbolsLength) < options.totalLength {
+      value = Constants.Crypto.generate(
+        of: options.totalLength - options.numbersLength - options.symbolsLength,
+        in: Constants.Crypto.lowercaseCharacters + Constants.Crypto.uppercaseCharacters)
     }
-    
+
     let numbers = Constants.Crypto.generate(of: options.numbersLength, in: Constants.Crypto.numbers)
     let symbols = Constants.Crypto.generate(
       of: options.symbolsLength,
-      in: (options.excludeAmbiguousCharacters == false ? Constants.Crypto.symbols+Constants.Crypto.ambiguousCharacters : Constants.Crypto.symbols)
+      in: (options.excludeAmbiguousCharacters == false
+        ? Constants.Crypto.symbols + Constants.Crypto.ambiguousCharacters
+        : Constants.Crypto.symbols)
     )
-    
+
     value += numbers + symbols
-    
+
     var secretArr = Array(value)
-    
+
     let shuffleCount = Int.random(in: 1..<42)
-    
+
     for _ in 1...shuffleCount {
       secretArr.shuffle()
     }
-    
+
     password = String(secretArr)
   }
-  
+
   func reset() {
     options = GeneratorViewModel.getNewOptions()
     generate()
   }
-  
+
   static func parsePassword() -> String {
     if let string = UserDefaults.standard.string(forKey: Constants.STORAGE_KEY.PASSWORD) {
-      return string;
+      return string
     }
     return ""
   }
-  
+
   static func parseOptions() -> Options {
     guard
       let data = UserDefaults.standard.data(forKey: Constants.STORAGE_KEY.OPTIONS),
@@ -79,7 +83,7 @@ class GeneratorViewModel: ObservableObject {
     }
     return options
   }
-  
+
   static func getNewOptions() -> Options {
     return Options(
       totalLength: Double(Constants.DEFAULT_OPTIONS.TOTAL_LENGTH),
@@ -90,5 +94,5 @@ class GeneratorViewModel: ObservableObject {
       excludeAmbiguousCharacters: (Constants.DEFAULT_OPTIONS.EXCLUDE_AMBIGUOUS_CHARACTERS)
     )
   }
-  
+
 }
